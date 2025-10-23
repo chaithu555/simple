@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:request-config>
 	<flow name="simpleFlow" doc:id="662b6fe2-73a8-42f1-a856-e09a63fa10e4" >
 		<http:listener doc:name="Listener" doc:id="9c8911db-bdf8-4e3e-b68a-720e52414f52" config-ref="HTTP_Listener_config" path="/simple"/>
-		<http:request method="GET" doc:name="Request" doc:id="2e312df6-99cc-4387-9029-7aa7f3190ee2" config-ref="HTTP_Request_configuration" path="/api/timezone/Asia/Kolkata"/>
+		<http:request method="GET" doc:name="Request Raw" doc:id="2e312df6-99cc-4387-9029-7aa7f3190ee2" config-ref="HTTP_Request_configuration" path="/api/timezone/Asia/chennai"/>
 		<ee:transform doc:name="Transform Message" doc:id="e5f0bfd0-4ef5-485e-95ce-b6adf27eb770" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
